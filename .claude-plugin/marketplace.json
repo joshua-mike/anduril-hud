@@ -1,0 +1,11 @@
+{
+  "name": "anduril-hud",
+  "owner": { "name": "joshua-mike" },
+  "plugins": [
+    {
+      "name": "anduril-hud",
+      "source": "./",
+      "description": "Black-and-lime defense-tech look with an orbital backdrop and a live telemetry band for context and usage limits"
+    }
+  ]
+}
