@@ -1,12 +1,12 @@
 # anduril-hud
 
-A Claude Code mod for the desktop app: a stark black-and-lime defense-tech look, an animated orbital backdrop, and a live telemetry band above the prompt.
+A Claude Code mod for the desktop app: a stark black and link-blue defense-tech look, an animated orbital backdrop, and a live telemetry band above the prompt.
 
 > Unofficial fan project inspired by the visual style of Anduril Industries' website. Not affiliated with or endorsed by Anduril. It uses no Anduril logos, artwork or fonts.
 
 ## What you get
 
-- **Theme**: dark-only. Pure black surfaces, white and warm-grey text, lime `#DFF140` accent.
+- **Theme**: dark-only. Pure black surfaces, white and warm-grey text, link-blue `#58A6FF` accent.
 - **Backdrop**: a slowly drifting starfield over a faint survey grid, a planet limb with two tilted orbits and tracked objects, HUD corner brackets and a slow scan line. The art keeps to the edges, away from the conversation and the message box.
 - **Telemetry band**, just above the prompt:
 
@@ -21,7 +21,7 @@ A Claude Code mod for the desktop app: a stark black-and-lime defense-tech look,
   | `WEEK` | the weekly limit across all models |
   | `FABLE` | the weekly Fable allowance (see below) |
 
-  Bars are lime, amber from 70%, red from 90%. Each limit shows a countdown to its reset.
+  Bars are blue, amber from 70%, red from 90%. Each limit shows a countdown to its reset.
 
 ## The FABLE meter
 

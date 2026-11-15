@@ -1,6 +1,6 @@
 {
   "name": "anduril-hud",
-  "version": "0.1.0",
-  "description": "Black-and-lime defense-tech look with an orbital backdrop and a live telemetry band for context and usage limits",
+  "version": "0.1.1",
+  "description": "Black and link-blue defense-tech look with an orbital backdrop and a live telemetry band for context and usage limits",
   "types": "./types/index.d.ts"
 }

@@ -1,4 +1,4 @@
-// An orbital-ops backdrop in a stark black-and-lime defense-tech idiom:
+// An orbital-ops backdrop in a stark black and link-blue defense-tech idiom:
 // a starfield, a faint survey grid, a planet limb in the top-right corner
 // with two tilted orbits and their tracked objects, HUD brackets and a slow scan.
 
@@ -31,7 +31,7 @@ function grid(): string {
   return out
 }
 
-const LIME = '#DFF140'
+const LINK_BLUE = '#58A6FF'
 
 export const SCENE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
 <style>
@@ -54,17 +54,17 @@ text{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spa
 <g class="drift">${stars()}</g>
 <rect class="scan" x="0" y="0" width="1600" height="60" fill="url(#sg)"/>
 <defs>
-<linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${LIME}" stop-opacity="0"/><stop offset="1" stop-color="${LIME}" stop-opacity=".045"/></linearGradient>
+<linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${LINK_BLUE}" stop-opacity="0"/><stop offset="1" stop-color="${LINK_BLUE}" stop-opacity=".045"/></linearGradient>
 <radialGradient id="pl" cx=".35" cy=".65" r=".75"><stop offset="0" stop-color="#1a1a18"/><stop offset=".8" stop-color="#070707"/><stop offset="1" stop-color="#000"/></radialGradient>
 </defs>
 <svg class="corner" x="0" y="0" width="1600" height="1000" viewBox="0 0 800 520" preserveAspectRatio="xMaxYMin meet">
  <g transform="translate(720 70)">
   <circle r="170" fill="url(#pl)"/>
-  <circle r="170" fill="none" stroke="${LIME}" stroke-opacity=".55" stroke-width="1.2" stroke-dasharray="2 5"/>
+  <circle r="170" fill="none" stroke="${LINK_BLUE}" stroke-opacity=".55" stroke-width="1.2" stroke-dasharray="2 5"/>
   <circle r="182" fill="none" stroke="#fff" stroke-opacity=".08"/>
   <g transform="rotate(-24) scale(1 .32)">
    <circle r="300" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
-   <g class="spin1"><circle cx="300" cy="0" r="9" fill="${LIME}"/><circle cx="300" cy="0" r="22" fill="none" stroke="${LIME}" stroke-opacity=".5" stroke-width="2"/></g>
+   <g class="spin1"><circle cx="300" cy="0" r="9" fill="${LINK_BLUE}"/><circle cx="300" cy="0" r="22" fill="none" stroke="${LINK_BLUE}" stroke-opacity=".5" stroke-width="2"/></g>
   </g>
   <g transform="rotate(18) scale(1 .5)">
    <circle r="380" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1.5" stroke-dasharray="6 10"/>
@@ -78,5 +78,5 @@ text{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spa
  <path d="M24 64V24H64"/><path d="M1536 976H1576V936"/>
 </g>
 <text x="40" y="52">[ SPACE ]</text>
-<circle class="blink" cx="1488" cy="968" r="3" fill="${LIME}"/>
+<circle class="blink" cx="1488" cy="968" r="3" fill="${LINK_BLUE}"/>
 </svg>`

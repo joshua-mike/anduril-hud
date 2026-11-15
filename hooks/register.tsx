@@ -6,7 +6,7 @@ import { makeColors } from './make-colors.js'
 import { SCENE } from './scene'
 
 // ── Look ─────────────────────────────────────────────────────────────────────
-const LIME = '#DFF140'
+const LINK_BLUE = '#58A6FF'
 const AMBER = '#F2B33D'
 const RED = '#FF5A47'
 const DIM = '#3A3A36'
@@ -16,7 +16,7 @@ const ASH = '#B0B0A9'
 const { theme, problems } = makeColors({
   label: 'Anduril HUD',
   only: 'dark',
-  roles: { accent: LIME, danger: RED, success: '#5FD38D', warning: AMBER, pro: '#8FB8FF' },
+  roles: { accent: LINK_BLUE, danger: RED, success: '#5FD38D', warning: AMBER, pro: '#8FB8FF' },
   dark: {
     gray: {
       anchors: {
@@ -113,7 +113,7 @@ async function publish($: EngineInterface, next: Telemetry) {
 // ── Formatting ───────────────────────────────────────────────────────────────
 function tone(p: number | undefined) {
   if (p === undefined) return ASH
-  return p >= 90 ? RED : p >= 70 ? AMBER : LIME
+  return p >= 90 ? RED : p >= 70 ? AMBER : LINK_BLUE
 }
 
 function bar(p: number | undefined, cells = 12) {
@@ -307,7 +307,7 @@ export const register: Register = on => {
     return (
       <Box flexDirection="row" flexWrap="wrap" columnGap={3} rowGap={0} alignItems="center" paddingX={1}>
         <Box flexDirection="row" gap={1} alignItems="center">
-          <Text mono size="caption" color={e.props.isWorking ? LIME : ASH}>
+          <Text mono size="caption" color={e.props.isWorking ? LINK_BLUE : ASH}>
             {e.props.isWorking ? '◉' : '○'}
           </Text>
           <Text mono size="caption" weight="semibold" color="#ffffff">
