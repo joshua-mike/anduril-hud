@@ -255,7 +255,7 @@ export const register: Register = on => {
   on('ui.render', { component: 'Backdrop' }, ($, e, next) => {
     if (e.surface !== 'desktop' && e.surface !== 'mobile') return next(e)
     const { Svg } = $.ui.resolve(e)
-    return <Svg source={SCENE} alt="A planet limb with two satellites tracing slow orbits over a starfield" />
+    return <Svg source={SCENE} alt="A planet limb with two satellites tracing slow orbits over a starfield, with an occasional shooting star" />
   })
 
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
