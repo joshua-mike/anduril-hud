@@ -1,6 +1,6 @@
 // An orbital-ops backdrop in a stark black and link-blue defense-tech idiom:
 // a starfield, a faint survey grid, a planet limb in the top-right corner
-// with two tilted orbits and their tracked objects, HUD brackets and a slow scan.
+// with two tilted orbits and their tracked objects, and HUD brackets.
 
 function rng(seed: number) {
   let s = seed >>> 0
@@ -40,8 +40,6 @@ export const SCENE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 
 .spin1{transform-origin:0 0;animation:spin 90s linear infinite}
 .spin2{transform-origin:0 0;animation:spin 140s linear infinite reverse}
 @keyframes spin{to{transform:rotate(360deg)}}
-.scan{animation:scan 14s linear infinite}
-@keyframes scan{0%{transform:translateY(-60px)}100%{transform:translateY(1060px)}}
 .blink{animation:blink 2.4s steps(2,end) infinite}
 @keyframes blink{50%{opacity:0}}
 .drift{animation:drift 60s ease-in-out infinite alternate}
@@ -52,9 +50,7 @@ text{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;letter-spa
 <rect width="1600" height="1000" fill="#000"/>
 <g stroke="#fff" stroke-opacity=".035" stroke-width="1">${grid()}</g>
 <g class="drift">${stars()}</g>
-<rect class="scan" x="0" y="0" width="1600" height="60" fill="url(#sg)"/>
 <defs>
-<linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${LINK_BLUE}" stop-opacity="0"/><stop offset="1" stop-color="${LINK_BLUE}" stop-opacity=".045"/></linearGradient>
 <radialGradient id="pl" cx=".35" cy=".65" r=".75"><stop offset="0" stop-color="#1a1a18"/><stop offset=".8" stop-color="#070707"/><stop offset="1" stop-color="#000"/></radialGradient>
 </defs>
 <svg class="corner" x="0" y="0" width="1600" height="1000" viewBox="0 0 800 520" preserveAspectRatio="xMaxYMin meet">

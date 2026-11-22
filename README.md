@@ -7,7 +7,7 @@ A Claude Code mod for the desktop app: a stark black and link-blue defense-tech 
 ## What you get
 
 - **Theme**: dark-only. Pure black surfaces, white and warm-grey text, link-blue `#58A6FF` accent.
-- **Backdrop**: a slowly drifting starfield over a faint survey grid, a planet limb with two tilted orbits and tracked objects, HUD corner brackets and a slow scan line. The art keeps to the edges, away from the conversation and the message box.
+- **Backdrop**: a slowly drifting starfield over a faint survey grid, a planet limb with two tilted orbits and tracked objects, and HUD corner brackets. The art keeps to the edges, away from the conversation and the message box.
 - **Telemetry band**, just above the prompt:
 
   ```
